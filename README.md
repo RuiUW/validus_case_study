@@ -1,5 +1,5 @@
-# validus_case_study
-#
+# Validus Case Study
+# I spent approciatemately 5 hrs on the Quantitative Research Case Study
 
 # Question 1 reference:
 https://quantpy.com.au/binomial-tree-model/intro-to-binomial-trees/

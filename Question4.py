@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
 import numpy as np
 
 # Initialise parameters
@@ -21,16 +15,4 @@ def exp_max_Sj(v,N):
     return sum(weighted_Sj)
        
 exp_max_Sj(v,N)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 

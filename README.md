@@ -2,7 +2,7 @@
 # I spent approciatemately 5 hrs on the Quantitative Research Case Study
 
 # Question 1 reference:
-https://quantpy.com.au/binomial-tree-model/intro-to-binomial-trees/
+https://quantpy.com.au/binomial-tree-model/intro-to-binomial-trees/ \
 https://www.goddardconsulting.ca/option-pricing-binomial-index.html
 
 # Question 2 reference:

@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import numpy as np
 
 # Initialise parameters
@@ -36,16 +30,3 @@ def binomial_tree_amercall(v,K,N,r):
     return C[0]
 
 binomial_tree_amercall(v,K,N,r)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-

@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[22]:
-
-
 import numpy as np
 
 # Initialise parameters
@@ -48,22 +42,4 @@ def goal_seek(target,_threshold):
 
 # example
 # goal_seek(0.0497500000000001,0.000001)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 

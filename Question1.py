@@ -1,14 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[11]:
-
-
 import numpy as np
-
-
-# In[12]:
-
 
 # Initialise parameters
 S0 = 1     # initial stock price
@@ -19,15 +9,18 @@ N = 3      # number of time steps
 v = 0.1
 
 def binomial_tree_eurcall(v,K,N,r):
+    #precompute constants
     u = 1+v
     d = 1-v
     disc = np.exp(-r*N)
     
+    # initialise asset prices at maturity - Time step N
     S = np.zeros(N+1)
     S[0] = S0*d**N
     for j in range(1,N+1):
         S[j] = S[j-1]*u/d
     
+    # initialise option values at maturity
     C = np.zeros(N+1)
     for j in range(0,N+1):
         C[j] = max(0, S[j]-K)  
@@ -39,10 +32,6 @@ def binomial_tree_eurcall(v,K,N,r):
     return C[0]
         
 binomial_tree_eurcall(v,K,N,r)
-
-
-# In[13]:
-
 
 def binomial_tree_eurcall2(v,K,N,r):
     #precompute constants
@@ -61,27 +50,7 @@ def binomial_tree_eurcall2(v,K,N,r):
         C = disc * ( q * C[1:i+1] + (1-q) * C[0:i] )
     return C[0]
 
-
-# In[10]:
-
-
 binomial_tree_eurcall2(v,K,N,r)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
 
 
 
